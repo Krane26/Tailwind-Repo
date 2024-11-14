@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krane's Blogspot</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans antialiased">
+
+    <header class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Krane's Blog</h1>
+            <nav class="space-x-6">
+                <a href="#home" class="hover:text-gray-300">Home</a>
+                <a href="#about" class="hover:text-gray-300">About</a>
+                <a href="#contact" class="hover:text-gray-300">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="featured" class="py-16 bg-gray-200">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Featured Posts</h2>
+            <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="images/tailwind.jpg" alt="Post 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-4">Understanding Tailwind CSS</h3>
+                        <p class="text-gray-600">A beginner's guide to using Tailwind CSS and why it's gaining popularity in web development.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 mt-4 inline-block">Read more &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="images/responsive.jpg" alt="Post 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-4">Best Practices for Responsive Design</h3>
+                        <p class="text-gray-600">Learn the key techniques for making your website look great on any device, big or small.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 mt-4 inline-block">Read more &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="images/webaccess.jpeg" alt="Post 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-4">The Importance of Web Accessibility</h3>
+                        <p class="text-gray-600">Why web accessibility is essential for all users, including those with disabilities.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 mt-4 inline-block">Read more &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="categories" class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Blog Categories</h2>
+            <div class="flex justify-center space-x-6">
+                <span class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm">Web Development</span>
+                <span class="bg-green-600 text-white px-4 py-2 rounded-full text-sm">Design</span>
+                <span class="bg-red-600 text-white px-4 py-2 rounded-full text-sm">Tech News</span>
+                <span class="bg-purple-600 text-white px-4 py-2 rounded-full text-sm">Tutorials</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="recent" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Recent Posts</h2>
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold">How to Set Up a Web Development Environment</h3>
+                    <p class="text-gray-600">Published on January 15, 2024 | A comprehensive guide to setting up a local web development environment for frontend and backend development.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold">What Is UX Design?</h3>
+                    <p class="text-gray-600">Published on January 10, 2024 | A deep dive into the principles of UX design and how it affects user experience.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold">SEO Tips for Beginners</h3>
+                    <p class="text-gray-600">Published on January 5, 2024 | Learn the basics of SEO and how to optimize your website to rank higher on search engines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="bg-blue-600 text-white py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Subscribe to Our Newsletter</h2>
+            <p class="text-lg mb-8">Get the latest blog updates directly to your inbox.</p>
+            <form class="max-w-lg mx-auto">
+                <div class="flex items-center space-x-4">
+                    <input type="email" placeholder="Enter your email" class="w-full p-3 rounded-lg text-gray-800" required>
+                    <button type="submit" class="bg-white text-blue-600 px-6 py-3 rounded-lg hover:bg-gray-200 focus:outline-none">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="hover:text-gray-400">Facebook</a>
+                <a href="#" class="hover:text-gray-400">Twitter</a>
+                <a href="#" class="hover:text-gray-400">Instagram</a>
+                <a href="#" class="hover:text-gray-400">LinkedIn</a>
+            </div>
+            <p class="text-sm">&copy; 2024 Krane's Blogspot. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

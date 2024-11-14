@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-100 font-sans antialiased">
+
+    <header class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">OLUKE DAMILOLA</h1>
+            <nav class="space-x-6">
+                <a href="#home" class="hover:text-gray-300">Home</a>
+                <a href="#projects" class="hover:text-gray-300">Projects</a>
+                <a href="#contact" class="hover:text-gray-300">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="relative bg-cover bg-center h-96" style="background-image: url('images/software.jpg');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="container mx-auto text-center text-white relative z-10 pt-32">
+            <h2 class="text-4xl font-bold">Hello, I'm Oluke Damilola</h2>
+            <p class="mt-4 text-xl">Welcome to my personal portfolio.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="py-16 bg-gray-200">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">My Skills</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold">Web Development</h3>
+                    <p class="mt-4">HTML, CSS, JavaScript, React, Tailwind CSS</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold">UI/UX Design</h3>
+                    <p class="mt-4">Figma, Adobe XD, Wireframing, Prototyping</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold">Backend Development</h3>
+                    <p class="mt-4">Node.js, Express, MongoDB, SQL</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">My Projects</h2>
+            <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="images/blog.jpg" alt="Project 1" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-semibold mt-4">Personal Blog Website</h3>
+                    <p class="mt-2">A responsive personal blog built with HTML, CSS and JavaScript. <br> Features a simple CMS for managing posts <br>
+                        and a user-friendly interface for readers.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="images/ecommerce.jpg" alt="Project 2" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-semibold mt-4">E-Commerce Store</h3>
+                    <p class="mt-2">An online store built with React and Node.js. <br> 
+                        Features include product listings, search functionality, <br>
+                        and integration with stripe for payment processing.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="images/weather.jpg" alt="Project 3" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-semibold mt-4">Weather App</h3>
+                    <p class="mt-2">A weather forecasting app built with React and the OpenWeather API. <br> 
+                        Provides real-time weather data and <br> geolocation-based weather updates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-blue-600 text-white py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Contact Me</h2>
+            <form action="#" method="POST" class="max-w-lg mx-auto">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-semibold">Name</label>
+                    <input type="text" id="name" name="name" class="w-full p-3 rounded-lg bg-gray-100 border border-gray-300 focus:ring-2 focus:ring-blue-500" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-semibold">Email</label>
+                    <input type="email" id="email" name="email" class="w-full p-3 rounded-lg bg-gray-100 border border-gray-300 focus:ring-2 focus:ring-blue-500" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-sm font-semibold">Message</label>
+                    <textarea id="message" name="message" rows="4" class="w-full p-3 rounded-lg bg-gray-100 border border-gray-300 focus:ring-2 focus:ring-blue-500" required></textarea>
+                </div>
+                <button type="submit" class="w-full py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="hover:text-gray-400">LinkedIn</a>
+                <a href="#" class="hover:text-gray-400">GitHub</a>
+                <a href="#" class="hover:text-gray-400">Twitter</a>
+            </div>
+            <p class="text-sm">&copy; 2024 OLUKE DAMILOLA.All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
